@@ -1,0 +1,187 @@
+body{
+  margin: 0 auto;
+  height: max-content;
+}
+.App {
+  text-align: center;
+  display: flex;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: bold;
+}
+.side-menu{
+  /* position: absolute;
+  top:0;left: 0;bottom: 0; */
+  box-sizing: border-box;
+  height: 100vh;
+  width:20%;
+}
+.side-menu-up{
+  height: 80vh;
+}
+.side-menu-chat, .side-menu-model p,.side-menu-model button{
+  width:90%;
+  border-radius: 4px;
+  padding:12px;
+  box-sizing: border-box;
+  border:1px solid grey;
+  margin:5%;
+  text-align: left;
+  transition: all ease 0.5s;
+}
+.side-menu-chat:hover{
+  background-color: navy;
+}
+.side-menu-chat span{
+  padding-right: 10px;
+}
+.side-menu-model button{
+  font-size: medium;
+  font-family: poppins;
+  background-color: navajowhite;
+  color: navy;
+}
+.side-menu-model div{
+  background-color: white;
+  color: rgb(238, 154, 27);
+  padding: 13px;
+  line-height: 20px;
+  font-size: smaller;
+  margin:0% auto;
+}
+.side-menu-model div h3 span{
+  color:black; 
+}
+.helpbox {
+  color: red;
+  text-align: left;
+  font-family: gemunu libre;
+  font-size: larger;
+}
+.history{
+  list-style-type: none;
+  background-color: white;
+  color:navy;
+}
+hr{
+  width: 90%;
+  border: none;
+  height: 1px;
+  background-color:#020202;
+}
+.action-btns button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  all:unset;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 12px;
+  box-sizing: border-box;
+  transition: all ease 0.3s;
+}
+.action-btns button:hover{
+  background-color: navy;
+}
+.action-btns button svg{
+  margin: 0px 3px;
+}
+.main-page{
+  position: relative;
+  top:0;right: 0;bottom: 0;
+  width: 80%;
+}
+.loading{
+  position: absolute;
+  top:15%;
+  left:36%;
+}
+.im3{
+  width: 200px;
+  height: 200px;
+  animation-name: sale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition: all ease 1s;
+}
+@keyframes sale {
+  from{
+    transform: scale(0.6)
+  }
+  to{
+     transform: scale(1.0);
+  }
+}
+.hload{
+  line-height: 0px;
+  font-size: 65px;
+  font-family: gemunu libre;
+  font-weight: lighter;
+}
+.main-page-res{
+  top: 0; bottom: 0;right: 0;
+  overflow-y: scroll;
+  height:80vh;
+  box-sizing: border-box;
+}
+.main-page-res::-webkit-scrollbar {
+  width: 5px;
+}
+.main-page-res::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.main-page-res::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.main-page-ans .chat-box{
+  margin: 0 auto;
+  padding:6px 30%;
+  display:flex;
+  align-items: flex-start;
+  font-size: 13px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.chat-box img{
+  border-radius: 50%;
+  width:30px;
+  height: 30px;
+  margin: 0 4%;
+}
+.chat-box h1{
+  border:2px solid black;
+  border-radius: 50%;
+  padding:5px;
+  font-size: 14px;
+  margin: 0 4%;
+  color: rgb(238, 154, 27);
+}
+.main-page .main-page-box{
+  position: absolute;
+  bottom: 5%;left: 5%;
+  width:90%;
+  display:flex;
+  align-items: center;
+  border-radius: 4px;
+  padding:10px;
+  box-sizing: border-box;
+  box-shadow: black 0px 5px 15px;
+}
+.main-page-box input{
+  all: unset;
+  text-align: left;
+  width:90%;
+  padding:10px;
+}
+.main-page-box button{
+  all:unset;
+  background: transparent;
+  transition:ease 0.8s;
+}
+
+
+
